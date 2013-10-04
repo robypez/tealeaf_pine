@@ -1,4 +1,5 @@
-tealeaf
-=======
+Tealeaf Exercises
+=========
 
-Tealeaf exercise
+My Ruby & Rails exercise for Tealeaf Academy
+ 
