@@ -52,4 +52,3 @@ puts "Enter a number beetwen 1 and 3000"
 
 romanic(gets.chomp.to_i)
 
-
