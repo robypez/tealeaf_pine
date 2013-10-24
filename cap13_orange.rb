@@ -1,8 +1,9 @@
 #orange tree
 
 class OrangeTree
+	MAX_AGE = 6
 
-	attr_accessor :height
+	attr_reader :height
 
 	def initialize
 		
@@ -22,21 +23,7 @@ class OrangeTree
 			puts "Your tree is #{@height}cm tall and #{@year} years and #{@tree_month} month old"
 			puts "On the tree there are #{@tree_orange} orange"
 		else
-			puts "The tree is died..."
-		end
-
-	end
-
-
-	def one_year_passes
-
-		@tree_orange = 0
-		@tree_month = 0
-		@year = @year + 1
-		
-		if @year == 6
-			@alive = false
-			puts "Your tree is dead" 
+			puts "The tree is dead..."
 		end
 
 	end
@@ -84,7 +71,7 @@ class OrangeTree
 	private
 
 	def first_year
-		puts "You plant the seed, you have to wait"
+		puts "You plant the seed, you have to wait 12 months"
 		@alive = true
 		
 		(1..12).each do |pause|
@@ -96,7 +83,20 @@ class OrangeTree
 		@year = 1
 		@height = 40
 
-		puts "You have a nice orange tree"
+		puts "Now you have a nice orange tree"
+	end
+
+	def one_year_passes
+
+		@tree_orange = 0
+		@tree_month = 0
+		@year = @year + 1
+		
+		if @year == MAX_AGE
+			@alive = false
+			puts "Your tree is dead" 
+		end
+
 	end
 
 end
