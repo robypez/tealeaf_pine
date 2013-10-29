@@ -8,7 +8,7 @@ while beers >= 2 do
    beers -= 1
    
    puts "Take one down and pass it around, #{beers} bottles of beer on the wall."
-   puts ""
+   puts
   
 end
 
@@ -16,16 +16,16 @@ puts "#{beers} bottles of beer on the wall, #{beers} bottles of beer."
 beers -= 1
    
 puts "Take one down and pass it around, no more bottles of beer on the wall."
-puts ""
+puts
 puts "No more bottles of beer on the wall, no more bottles of beer. "
 puts "Go to the store and buy some more, 99 bottles of beer on the wall."
 
 
 #exercise 2
 
-puts ""
+puts
 puts "Excercise 2 - Grandma"
-puts ""
+puts
 
 
 while true
@@ -46,9 +46,9 @@ end
 
 #exercise 3 - grandma extended
 
-puts ""
+puts
 puts "Excercise 3 - Grandma extended"
-puts ""
+puts
 
 bye_count = 0
 

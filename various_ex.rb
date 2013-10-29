@@ -12,8 +12,6 @@ a.each do |value|
 puts "Your value is #{value}" if value > 5
 end
 
-
-
 # 3. Now, using the same array from #2, use the "select" method to extract all odd numbers into a new array.
 
 odd_number = a.select {|number| number%2 == 1}
