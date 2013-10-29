@@ -6,7 +6,7 @@
 # she gets her YAML on and moves them to the server.
 # Just for my own convenience, I'll go there now.
 
-Dir.chdir 'C:/Documents and Settings/Katy/PictureInbox'
+Dir.chdir 'E:/'
 # First we find all of the pictures to be moved.
 
 pic_names = Dir['F:/**/*.jpg']
@@ -45,9 +45,13 @@ pic_names.each do |name|
 # little things.)
 
 	# Now where were we? Oh, yeah...
-	File.rename name, new_name
-	# Finally, we increment the counter.
-	pic_number = pic_number + 1
+	if File.exist?(new_name)
+		exit
+	else
+		File.rename name, new_name
+		# Finally, we increment the counter.
+		pic_number = pic_number + 1
+	end
 end
 puts # This is so we aren't on progress bar line.
 puts 'Done, cutie!'
